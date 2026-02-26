@@ -32,7 +32,8 @@ const routes = {
 // --- i18n ---
 async function loadTranslations(lang) {
   try {
-    const response = await fetch(`/locales/${lang}.json`);
+    const base = import.meta.env.BASE_URL;
+    const response = await fetch(`${base}locales/${lang}.json`);
     translations = await response.json();
   } catch (e) {
     console.error('Failed to load translations:', e);
