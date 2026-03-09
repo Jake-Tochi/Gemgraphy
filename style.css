@@ -6,27 +6,27 @@
 /* --- CSS Custom Properties --- */
 :root {
   /* Colors — Dark Luxury Theme */
-  --color-bg: #141210;
-  /* primary bg — warm near-black */
-  --color-bg-alt: #1C1A17;
+  --color-bg: #1a1a1a;
+  /* primary bg — soft dark */
+  --color-bg-alt: #202020;
   /* alternate section bg */
-  --color-bg-dark: #0D0B09;
-  /* deepest sections / hero base */
-  --color-bg-dark-alt: #1A1714;
-  /* CTA / emphasised dark */
-  --color-text: #EDE8E2;
-  /* primary text — warm white */
-  --color-text-secondary: #A09890;
+  --color-bg-dark: #141414;
+  /* deepest sections / dark CTA */
+  --color-bg-dark-alt: #181818;
+  /* emphasised dark */
+  --color-text: #F2F2F2;
+  /* primary text — soft white */
+  --color-text-secondary: #D0D0D0;
   /* muted text */
-  --color-text-on-dark: #EDE8E2;
-  --color-text-on-dark-secondary: #A09890;
+  --color-text-on-dark: #F2F2F2;
+  --color-text-on-dark-secondary: #D0D0D0;
   --color-accent: #B8860B;
   --color-accent-light: #D4A843;
-  --color-border: #2A2724;
+  --color-border: #2A2A2A;
   /* subtle dark border */
-  --color-border-dark: #1A1714;
-  /* near-invisible border on dark */
-  --color-overlay: rgba(0, 0, 0, 0.65);
+  --color-border-dark: #1A1A1A;
+  /* near-invisible border */
+  --color-overlay: rgba(0, 0, 0, 0.6);
 
   /* Typography */
   --font-jp: 'Noto Serif JP', 'Yu Mincho', serif;
@@ -52,7 +52,8 @@
   --space-xl: 4rem;
   --space-2xl: 6rem;
   --space-3xl: 10rem;
-  --space-section: clamp(6rem, 5rem + 5vw, 12rem);
+  --space-section: clamp(8.75rem, 7rem + 5vw, 14rem);
+  /* 140px min */
 
   /* Layout */
   --max-width: 1200px;
