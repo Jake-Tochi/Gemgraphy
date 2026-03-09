@@ -5,28 +5,37 @@
 
 /* --- CSS Custom Properties --- */
 :root {
-  /* Colors — Dark Luxury Theme */
-  --color-bg: #1a1a1a;
-  /* primary bg — soft dark */
-  --color-bg-alt: #202020;
-  /* alternate section bg */
-  --color-bg-dark: #141414;
-  /* deepest sections / dark CTA */
-  --color-bg-dark-alt: #181818;
-  /* emphasised dark */
-  --color-text: #F2F2F2;
-  /* primary text — soft white */
-  --color-text-secondary: #D0D0D0;
-  /* muted text */
-  --color-text-on-dark: #F2F2F2;
-  --color-text-on-dark-secondary: #D0D0D0;
-  --color-accent: #B8860B;
-  --color-accent-light: #D4A843;
-  --color-border: #2A2A2A;
-  /* subtle dark border */
-  --color-border-dark: #1A1A1A;
-  /* near-invisible border */
-  --color-overlay: rgba(0, 0, 0, 0.6);
+  /* Colors — Refined Art Luxury Theme
+     垨・宝石・光・静けさを感じる洗練さ
+  */
+  --color-bg: #1c1c1c;
+  /* primary bg — neutral warm dark */
+  --color-bg-alt: #23201d;
+  /* alternate — hint of warm brown */
+  --color-bg-dark: #161616;
+  /* deepest — hero / darkest CTA */
+  --color-bg-dark-alt: #1f1c19;
+  /* mid-dark with warm tint */
+
+  /* Text — warm ivory tones, never pure white */
+  --color-text: #f3efe8;
+  /* headings / primary */
+  --color-text-secondary: #cfc7bc;
+  /* body copy */
+  --color-text-on-dark: #f3efe8;
+  --color-text-on-dark-secondary: #a89f93;
+  /* subdued / hints */
+  --color-text-muted: #7a726a;
+  /* timestamps / footnotes */
+
+  /* Accent — aged brass, not flashy gold */
+  --color-accent: #b08a3c;
+  --color-accent-light: #c9a05a;
+
+  --color-border: #2e2c28;
+  /* warm dark border */
+  --color-border-dark: #1c1a16;
+  --color-overlay: rgba(0, 0, 0, 0.58);
 
   /* Typography */
   --font-jp: 'Noto Serif JP', 'Yu Mincho', serif;
@@ -481,10 +490,11 @@ ol {
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg,
-      rgba(26, 23, 20, 0.3) 0%,
-      rgba(26, 23, 20, 0.1) 40%,
-      rgba(26, 23, 20, 0.5) 100%);
+  /* 墨を重ねるような暖かいオーバーレイ */
+  background: linear-gradient(160deg,
+      rgba(15, 12, 10, 0.25) 0%,
+      rgba(10, 8, 6, 0.15) 35%,
+      rgba(15, 12, 10, 0.55) 100%);
 }
 
 .hero__content {
@@ -579,10 +589,17 @@ ol {
 /* --- Section --- */
 .section {
   padding: var(--space-section) 0;
+  /* 極薄のラジアルグラデーションで黒ベタ感を解消 */
+  background-image: radial-gradient(ellipse 80% 40% at 50% 0%,
+      rgba(240, 220, 170, 0.03) 0%,
+      transparent 70%);
 }
 
 .section--dark {
   background-color: var(--color-bg-dark);
+  background-image: radial-gradient(ellipse 60% 50% at 50% 100%,
+      rgba(176, 138, 60, 0.04) 0%,
+      transparent 70%);
   color: var(--color-text-on-dark);
 }
 
@@ -594,9 +611,12 @@ ol {
   background-color: var(--color-accent);
 }
 
-/* section--alt: slightly lighter dark, creates hierarchy */
+/* section--alt: warm dark with subtle glow from bottom — creates breathing room */
 .section--alt {
   background-color: var(--color-bg-alt);
+  background-image: radial-gradient(ellipse 70% 50% at 50% 100%,
+      rgba(240, 220, 170, 0.025) 0%,
+      transparent 65%);
 }
 
 .section__header {
