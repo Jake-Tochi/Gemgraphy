@@ -5,20 +5,28 @@
 
 /* --- CSS Custom Properties --- */
 :root {
-  /* Colors */
-  --color-bg: #FAF8F5;
-  --color-bg-alt: #F3F0EB;
-  --color-bg-dark: #1A1714;
-  --color-bg-dark-alt: #252119;
-  --color-text: #2C2824;
-  --color-text-secondary: #8A8480;
+  /* Colors — Dark Luxury Theme */
+  --color-bg: #141210;
+  /* primary bg — warm near-black */
+  --color-bg-alt: #1C1A17;
+  /* alternate section bg */
+  --color-bg-dark: #0D0B09;
+  /* deepest sections / hero base */
+  --color-bg-dark-alt: #1A1714;
+  /* CTA / emphasised dark */
+  --color-text: #EDE8E2;
+  /* primary text — warm white */
+  --color-text-secondary: #A09890;
+  /* muted text */
   --color-text-on-dark: #EDE8E2;
   --color-text-on-dark-secondary: #A09890;
   --color-accent: #B8860B;
   --color-accent-light: #D4A843;
-  --color-border: #E8E4DF;
-  --color-border-dark: #3A3530;
-  --color-overlay: rgba(26, 23, 20, 0.6);
+  --color-border: #2A2724;
+  /* subtle dark border */
+  --color-border-dark: #1A1714;
+  /* near-invisible border on dark */
+  --color-overlay: rgba(0, 0, 0, 0.65);
 
   /* Typography */
   --font-jp: 'Noto Serif JP', 'Yu Mincho', serif;
@@ -261,38 +269,38 @@ ol {
 }
 
 .header--scrolled {
-  background-color: rgba(250, 248, 245, 0.95);
+  background-color: rgba(20, 18, 16, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 var(--color-border);
 }
 
-/* Scrolled: dark elements for light background */
+/* Scrolled: light elements remain on dark bg */
 .header--scrolled .header__logo {
-  color: var(--color-text);
+  color: var(--color-text-on-dark);
 }
 
 .header--scrolled .header__nav-link {
-  color: var(--color-text-secondary);
+  color: var(--color-text-on-dark-secondary);
 }
 
 .header--scrolled .header__nav-link:hover,
 .header--scrolled .header__nav-link--active {
-  color: var(--color-text);
+  color: var(--color-text-on-dark);
 }
 
 .header--scrolled .header__lang-toggle {
-  color: var(--color-text-secondary);
+  color: var(--color-text-on-dark-secondary);
   border-color: var(--color-border);
 }
 
 .header--scrolled .header__lang-toggle:hover {
-  color: var(--color-text);
+  color: var(--color-text-on-dark);
   border-color: var(--color-accent);
 }
 
 .header--scrolled .header__menu-btn span {
-  background-color: var(--color-text);
+  background-color: var(--color-text-on-dark);
 }
 
 .header__inner {
@@ -405,9 +413,9 @@ ol {
   transform: rotate(-45deg) translateY(-4.5px);
 }
 
-/* When menu is open, × must always be dark (mobile nav bg is light) */
+/* When menu is open, × is light (mobile nav bg is now dark) */
 .header__menu-btn--open span {
-  background-color: var(--color-text) !important;
+  background-color: var(--color-text-on-dark) !important;
 }
 
 /* Mobile Navigation Overlay */
@@ -419,7 +427,7 @@ ol {
   right: 0;
   bottom: 0;
   z-index: 999;
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-dark-alt);
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -585,6 +593,7 @@ ol {
   background-color: var(--color-accent);
 }
 
+/* section--alt: slightly lighter dark, creates hierarchy */
 .section--alt {
   background-color: var(--color-bg-alt);
 }
@@ -949,8 +958,8 @@ ol {
   padding: 12px 16px;
   font-family: var(--font-jp);
   font-size: var(--text-base);
-  color: var(--color-text);
-  background-color: transparent;
+  color: var(--color-text-on-dark);
+  background-color: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   transition: border-color var(--transition-fast);
@@ -986,12 +995,12 @@ ol {
 
 .cta-btn:hover {
   background-color: var(--color-accent);
-  color: var(--color-bg);
+  color: var(--color-bg-dark);
 }
 
 .cta-btn--filled {
   background-color: var(--color-accent);
-  color: var(--color-bg);
+  color: var(--color-bg-dark);
 }
 
 .cta-btn--filled:hover {
