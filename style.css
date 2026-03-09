@@ -1408,3 +1408,187 @@ ol {
     min-height: 280px;
   }
 }
+
+/* =============================================================
+   Hero CTA Button
+   ============================================================= */
+.hero__cta-btn {
+  display: inline-block;
+  font-family: var(--font-en);
+  font-size: var(--text-xs);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-on-dark);
+  border: 1px solid rgba(237, 232, 226, 0.5);
+  padding: var(--space-sm) var(--space-xl);
+  margin-top: var(--space-sm);
+  transition: border-color var(--transition-base), background-color var(--transition-base);
+  opacity: 0;
+  animation: heroFadeIn 1s ease-out 1s forwards;
+}
+
+.hero__cta-btn:hover {
+  border-color: var(--color-accent);
+  background-color: rgba(184, 134, 11, 0.1);
+  color: var(--color-text-on-dark);
+}
+
+/* Hero short variant (for sub-pages like Commission) */
+.hero--short {
+  height: 50vh;
+  min-height: 360px;
+}
+
+/* =============================================================
+   Section Light Variant
+   ============================================================= */
+.section--light {
+  background-color: var(--color-bg-alt);
+}
+
+/* =============================================================
+   Commission Page
+   ============================================================= */
+
+/* Process Steps */
+.commission-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.commission-step {
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+  transition: border-color var(--transition-base);
+}
+
+.commission-step:hover {
+  border-color: var(--color-accent);
+}
+
+.commission-step__number {
+  font-family: var(--font-en);
+  font-size: var(--text-3xl);
+  font-weight: 300;
+  color: var(--color-accent);
+  line-height: 1;
+  margin-bottom: var(--space-md);
+  letter-spacing: 0.05em;
+}
+
+.commission-step__label {
+  font-family: var(--font-jp);
+  font-size: var(--text-base);
+  letter-spacing: 0.1em;
+  color: var(--color-text);
+}
+
+[data-lang="en"] .commission-step__label {
+  font-family: var(--font-en);
+  font-size: var(--text-lg);
+}
+
+/* Includes List */
+.commission-includes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+  max-width: 640px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.commission-includes__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-jp);
+  font-size: var(--text-base);
+  color: var(--color-text-on-dark-secondary);
+  padding: var(--space-md) var(--space-lg);
+  border: 1px solid var(--color-border-dark);
+  letter-spacing: 0.05em;
+}
+
+.commission-includes__item::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+[data-lang="en"] .commission-includes__item {
+  font-family: var(--font-en);
+  font-size: var(--text-lg);
+}
+
+/* Pricing Cards */
+.commission-pricing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.commission-pricing__card {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-lg);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.commission-pricing__card:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 24px rgba(184, 134, 11, 0.08);
+}
+
+.commission-pricing__label {
+  font-family: var(--font-en);
+  font-size: var(--text-sm);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.commission-pricing__range {
+  font-family: var(--font-en);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  color: var(--color-accent);
+  letter-spacing: 0.05em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .commission-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .commission-includes {
+    grid-template-columns: 1fr;
+  }
+
+  .commission-pricing {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .commission-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__cta-btn {
+    padding: var(--space-sm) var(--space-lg);
+  }
+}

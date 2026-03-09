@@ -5,10 +5,11 @@ export function renderHeader(t, currentPath) {
   const navLinks = [
     { path: '#/', key: 'home' },
     { path: '#/soshoku-sho', key: 'soshokuSho' },
+    { path: '#/gallery', key: 'gallery' },
     { path: '#/gemgraphy', key: 'gemgraphy' },
     { path: '#/beadsgraphy', key: 'beadsgraphy' },
     { path: '#/artist', key: 'artist' },
-    { path: '#/gallery', key: 'gallery' },
+    { path: '#/commission', key: 'commission' },
     { path: '#/contact', key: 'contact' },
   ];
 
@@ -49,10 +50,11 @@ export function renderMobileNav(t, currentPath) {
   const navLinks = [
     { path: '#/', key: 'home' },
     { path: '#/soshoku-sho', key: 'soshokuSho' },
+    { path: '#/gallery', key: 'gallery' },
     { path: '#/gemgraphy', key: 'gemgraphy' },
     { path: '#/beadsgraphy', key: 'beadsgraphy' },
     { path: '#/artist', key: 'artist' },
-    { path: '#/gallery', key: 'gallery' },
+    { path: '#/commission', key: 'commission' },
     { path: '#/contact', key: 'contact' },
   ];
 

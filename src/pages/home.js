@@ -8,9 +8,9 @@ export function renderHome(t) {
       <div class="hero__bg" style="background-image: url('/images/calligraphy-wa.jpg');"></div>
       <div class="hero__overlay"></div>
       <div class="hero__content">
-        <h1 class="hero__title hero__title--jp">${t.hero.title}</h1>
+        <h1 class="hero__title hero__title--jp">${t.hero.title.replace(/\n/g, '<br>')}</h1>
         <div class="hero__divider"></div>
-        <p class="hero__subtitle">${t.hero.subtitle}</p>
+        <a href="#/soshoku-sho" class="hero__cta-btn">${t.hero.ctaLabel}</a>
       </div>
       <div class="hero__scroll-indicator">
         <span>${t.hero.scroll}</span>

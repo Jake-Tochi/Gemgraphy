@@ -6,17 +6,19 @@
   "nav": {
     "home": "トップ",
     "soshokuSho": "装飾書",
+    "gallery": "ギャラリー",
     "gemgraphy": "Gemgraphy",
     "beadsgraphy": "Beadsgraphy",
     "artist": "認定作家",
-    "gallery": "ギャラリー",
+    "commission": "制作依頼",
     "contact": "お問い合わせ"
   },
   "langToggle": "EN",
   "hero": {
-    "title": "装飾書",
+    "title": "あなたを象徴する一文字を\n作品として形にする",
     "subtitle": "書の文化から生まれた、新しい芸術のかたち",
-    "scroll": "Scroll"
+    "scroll": "Scroll",
+    "ctaLabel": "装飾書とは"
   },
   "home": {
     "introOverline": "Art Form",
@@ -269,6 +271,45 @@
     },
     "submit": "送信する",
     "thanks": "お問い合わせありがとうございます。"
+  },
+  "commission": {
+    "heroTitle": "制作依頼",
+    "heroSubtitle": "Commission",
+    "overline": "Commission",
+    "title": "Gemgraphy 制作のご依頼",
+    "desc": "Gemgraphyは\n名前や人生のテーマから\n象徴となる一文字を設計し、\nそれを作品として制作するプロジェクトです。",
+    "processOverline": "Process",
+    "processTitle": "制作の流れ",
+    "processSteps": [
+      "申込み / ヒアリング",
+      "象徴設計",
+      "作品制作",
+      "納品"
+    ],
+    "includesOverline": "Includes",
+    "includesTitle": "制作内容",
+    "includesDesc": "以下が含まれます",
+    "includesList": [
+      "Gemgraphy作品",
+      "象徴設計レポート",
+      "制作意図レポート",
+      "解説動画",
+      "NFTによる真正性証明"
+    ],
+    "pricingOverline": "Pricing",
+    "pricingTitle": "価格",
+    "pricingGemgraphy": "Gemgraphy",
+    "pricingGemgraphyRange": "$1,000 – $3,000",
+    "pricingBeadsgraphy": "Beadsgraphy",
+    "pricingBeadsgraphyRange": "$150 – $300",
+    "pricingNote": "※制作内容により変動",
+    "periodOverline": "Timeline",
+    "periodTitle": "制作期間",
+    "periodDesc": "約4〜6週間",
+    "applyOverline": "Apply",
+    "applyTitle": "申し込み",
+    "applyDesc": "制作をご希望の方は\n以下のフォームからお申し込みください。",
+    "applyLink": "お問い合わせフォームへ"
   },
   "footer": {
     "desc": "日本の書道文化を基盤とした新しい芸術表現の世界。",

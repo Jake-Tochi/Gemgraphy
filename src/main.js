@@ -13,6 +13,7 @@ import { renderBeadsgraphy } from './pages/beadsgraphy.js';
 import { renderArtist } from './pages/artist.js';
 import { renderGallery, initGallery } from './pages/gallery.js';
 import { renderContact } from './pages/contact.js';
+import { renderCommission } from './pages/commission.js';
 
 // --- State ---
 let currentLang = localStorage.getItem('gemgraphy-lang') || 'ja';
@@ -37,6 +38,7 @@ const routes = {
   '#/artist': renderArtist,
   '#/gallery': renderGallery,
   '#/contact': renderContact,
+  '#/commission': renderCommission,
 };
 
 // --- i18n ---

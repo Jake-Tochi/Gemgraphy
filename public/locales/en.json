@@ -5,18 +5,20 @@
     },
     "nav": {
         "home": "Home",
-        "soshokuSho": "Sōshoku-sho",
+        "soshokuSho": "Decorative Calligraphy",
+        "gallery": "Gallery",
         "gemgraphy": "Gemgraphy",
         "beadsgraphy": "Beadsgraphy",
-        "artist": "The Artists",
-        "gallery": "Gallery",
+        "artist": "Artists",
+        "commission": "Commission",
         "contact": "Contact"
     },
     "langToggle": "日本語",
     "hero": {
-        "title": "Sōshoku-sho",
+        "title": "A Symbol That Represents You",
         "subtitle": "A new art form born from the culture of calligraphy",
-        "scroll": "Scroll"
+        "scroll": "Scroll",
+        "ctaLabel": "What is Decorative Calligraphy"
     },
     "home": {
         "introOverline": "Art Form",
@@ -270,6 +272,45 @@
         },
         "submit": "Send Message",
         "thanks": "Thank you for your inquiry."
+    },
+    "commission": {
+        "heroTitle": "Commission",
+        "heroSubtitle": "制作依頼",
+        "overline": "Commission",
+        "title": "Commission a Gemgraphy Work",
+        "desc": "Gemgraphy is a personal art project\nwhere we design a symbolic character\nthat represents your name, story, or identity,\nand craft it into a unique work of art.",
+        "processOverline": "Process",
+        "processTitle": "How It Works",
+        "processSteps": [
+            "Application & Consultation",
+            "Symbol Design",
+            "Artwork Creation",
+            "Delivery"
+        ],
+        "includesOverline": "Includes",
+        "includesTitle": "What's Included",
+        "includesDesc": "Each commission includes:",
+        "includesList": [
+            "Gemgraphy Artwork",
+            "Symbol Design Report",
+            "Creative Intent Report",
+            "Documentary Video",
+            "NFT Certificate of Authenticity"
+        ],
+        "pricingOverline": "Pricing",
+        "pricingTitle": "Pricing",
+        "pricingGemgraphy": "Gemgraphy",
+        "pricingGemgraphyRange": "$1,000 – $3,000",
+        "pricingBeadsgraphy": "Beadsgraphy",
+        "pricingBeadsgraphyRange": "$150 – $300",
+        "pricingNote": "* Pricing varies depending on the scope of the work",
+        "periodOverline": "Timeline",
+        "periodTitle": "Production Timeline",
+        "periodDesc": "Approximately 4–6 weeks",
+        "applyOverline": "Apply",
+        "applyTitle": "How to Apply",
+        "applyDesc": "To begin your commission,\nplease fill out the inquiry form below.",
+        "applyLink": "Go to Inquiry Form"
     },
     "footer": {
         "desc": "A new world of artistic expression rooted in Japanese calligraphy culture.",
