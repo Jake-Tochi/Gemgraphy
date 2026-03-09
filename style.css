@@ -611,12 +611,57 @@ ol {
   background-color: var(--color-accent);
 }
 
-/* section--alt: warm dark with subtle glow from bottom — creates breathing room */
+/* section--alt: 和紙トーン — dark/light rhythm
+   暗 → 明 のリズムで呼吸感を作る */
 .section--alt {
-  background-color: var(--color-bg-alt);
-  background-image: radial-gradient(ellipse 70% 50% at 50% 100%,
-      rgba(240, 220, 170, 0.025) 0%,
-      transparent 65%);
+  background-color: #f3efe8;
+  background-image: none;
+  color: #1b1b1b;
+}
+
+.section--alt .text-body,
+.section--alt .prose__paragraph,
+.section--alt .artist-statement__paragraph,
+.section--alt .feature-card__desc {
+  color: #5a5248;
+}
+
+.section--alt .text-overline {
+  color: var(--color-accent);
+}
+
+.section--alt .heading-2,
+.section--alt .heading-3,
+.section--alt .feature-card__title,
+.section--alt .artist-block__name {
+  color: #1b1b1b;
+}
+
+.section--alt .divider {
+  background-color: var(--color-accent);
+}
+
+.section--alt .cta-link {
+  color: #1b1b1b;
+}
+
+.section--alt .cta-btn {
+  color: #1b1b1b;
+  border-color: var(--color-accent);
+}
+
+.section--alt .feature-card {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(176, 138, 60, 0.25);
+}
+
+.section--alt .nav-card {
+  border-color: rgba(176, 138, 60, 0.3);
+  color: #1b1b1b;
+}
+
+.section--alt .nav-card__link {
+  color: var(--color-accent);
 }
 
 .section__header {
@@ -1470,10 +1515,35 @@ ol {
 }
 
 /* =============================================================
-   Section Light Variant
+   Section Light Variant — 和紙 Alt (#e8e3d9)
+   暗→明リズムの第2明るいトーン
    ============================================================= */
 .section--light {
-  background-color: var(--color-bg-alt);
+  background-color: #e8e3d9;
+  background-image: none;
+  color: #1b1b1b;
+}
+
+.section--light .text-body,
+.section--light .prose__paragraph {
+  color: #5a5248;
+}
+
+.section--light .text-overline {
+  color: var(--color-accent);
+}
+
+.section--light .heading-2,
+.section--light .heading-3 {
+  color: #1b1b1b;
+}
+
+.section--light .divider {
+  background-color: var(--color-accent);
+}
+
+.section--light .heading-3[style] {
+  color: var(--color-accent) !important;
 }
 
 /* =============================================================
